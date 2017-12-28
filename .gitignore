@@ -1,0 +1,22 @@
+/.idea
+#/api/config/main-local.php
+/common/config/main-local.php
+/api/runtime/logs
+/api/runtime/debug
+/console/runtime/logs
+/api/web/assets
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+
+# My configurations:
+db.ini
+deploy_key_rsa
