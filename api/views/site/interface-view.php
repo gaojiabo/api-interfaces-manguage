@@ -141,7 +141,7 @@ use yii\bootstrap\ActiveForm;
         var url = $('#url').val();
         var method = $('#method').val();
         var params = $('.params-field');
-        var post_data = [];
+        var post_data = {};
         $.each(params,function(i){
             post_data[params[i].name] = params[i].value
         });
@@ -151,6 +151,7 @@ use yii\bootstrap\ActiveForm;
             data:post_data,
             success:function(data){
                 layer.msg('请求成功', {icon: 1});
+                data = JSON.stringify(data)
                 $('#result').val(data)
             },
             error:function(data){

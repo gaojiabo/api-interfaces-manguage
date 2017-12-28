@@ -28,6 +28,7 @@ class ProjectVersionInterface extends ApiActiveRecord
     }
     public function beforeSave($insert){
         if($insert){
+            $this->create_at = date('Y-m-d H:i:s');
             $this->create_user_id = Yii::$app->user->id;
             $this->create_user_name = Yii::$app->user->identity->username;
         }
@@ -92,8 +93,8 @@ class ProjectVersionInterface extends ApiActiveRecord
         if(empty($this->param)){
             return [];
         }
-        if(strstr($this->param,'\r\n')){
-            $params = explode('\r\n',$this->param);
+        if(strstr($this->param,"\r\n")){
+            $params = explode("\r\n",$this->param);
         }else{
             $params = [$this->param];
         }
@@ -110,8 +111,8 @@ class ProjectVersionInterface extends ApiActiveRecord
         if(empty($this->result)){
             return [];
         }
-        if(strstr($this->result,'\r\n')){
-            $results = explode('\r\n',$this->result);
+        if(strstr($this->result,"\r\n")){
+            $results = explode("\r\n",$this->result);
         }else{
             $results = [$this->result];
         }

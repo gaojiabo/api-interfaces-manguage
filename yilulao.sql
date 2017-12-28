@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-12-28 09:20:30
+Date: 2017-12-28 15:33:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -87,7 +87,8 @@ CREATE TABLE `hl_project_version_interface` (
   `param` text COMMENT '入参',
   `result` text COMMENT '返回值',
   `status` tinyint(1) unsigned DEFAULT '1' COMMENT '状态(1、正常 2、关闭)',
-  `create_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `create_at` timestamp NULL DEFAULT NULL COMMENT '创建时间',
+  `update_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`interface_id`),
   KEY `page_id` (`page_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
