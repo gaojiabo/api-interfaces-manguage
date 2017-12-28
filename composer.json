@@ -1,0 +1,8 @@
+{
+    "require": {
+        "yiisoft/yii2-elasticsearch": "^2.0",
+        "kucha/ueditor": "*",
+        "nmred/kafka-php": "v0.2.0.8",
+        "elasticsearch/elasticsearch": "^6.0"
+    }
+}
