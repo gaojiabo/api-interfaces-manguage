@@ -1,5 +1,4 @@
 /.idea
-
 /api/runtime/logs
 /api/runtime/debug
 /console/runtime/logs
