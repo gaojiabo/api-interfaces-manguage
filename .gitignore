@@ -1,9 +1,10 @@
 /.idea
+
 /api/runtime/logs
 /api/runtime/debug
 /console/runtime/logs
 /api/web/assets
-
+!api/
 # Windows:
 Thumbs.db
 ehthumbs.db
