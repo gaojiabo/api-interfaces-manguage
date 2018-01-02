@@ -43,7 +43,7 @@ class ProjectVersionInterface extends ApiActiveRecord
             [['page_id', 'interface_name', 'interface_url', 'interface_desc','status'], 'required'],
             [['page_id','create_user_id','project_id','status'], 'integer'],
             [['param', 'result','create_at','update_at','create_user_name'], 'string'],
-            [['interface_name', 'interface_url', 'interface_desc'], 'string', 'max' => 255],
+            [['interface_name', 'interface_url'], 'string', 'max' => 255],
             [['method'], 'string', 'max' => 10],
         ];
     }
@@ -118,8 +118,20 @@ class ProjectVersionInterface extends ApiActiveRecord
         }
         $resultArray = [];
         foreach($results as $result){
-            $resultArray[] = explode(',',$result);
+            $iResult = explode(',',$result);
+            if(count($iResult) > 2){
+                $reformResult = [];
+                $reformResult[] = $iResult[0];
+                $reformResult[] = $iResult[1];
+                unset($iResult[0]);
+                unset($iResult[1]);
+                $reformResult[] = implode(",",$iResult);
+                $resultArray[] = $reformResult;
+            }else{
+                $resultArray = $iResult;
+            }
         }
+
         return $resultArray;
     }
 }

@@ -93,7 +93,7 @@ use yii\bootstrap\ActiveForm;
                     <tr>
                         <td class="interface_td"><?=$model->getArrayValue($result,0)?></td>
                         <td class="interface_td"><?=$model->getArrayValue($result,1)?></td>
-                        <td class="interface_td"><?=$model->getArrayValue($param,2)?></td>
+                        <td class="interface_td"><?=$model->getArrayValue($result,2)?></td>
                     </tr>
                     <?endforeach?>
                 </table>
