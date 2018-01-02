@@ -18,5 +18,7 @@ api项目接口管理系统<br>
 　　'password' => '密码',<br>
 　　'charset' => 'utf8',<br>
 　　'tablePrefix'=>'hl_',<br>
-　]
+　]<br>
+linux下，当你拉取项目并将数据库配置好之后，将api-interfaces-manguage/api/web/assets这个文件用chmod -r 777 assets 赋予权限。
+
 	

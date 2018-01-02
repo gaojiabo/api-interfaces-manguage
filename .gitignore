@@ -1,11 +1,6 @@
 /.idea
-#/api/config/main-local.php
-/common/config/main-local.php
-/api/runtime/logs
-/api/runtime/debug
-/console/runtime/logs
-/api/web/assets
-
+/api/runtime/*
+/api/web/assets/*
 # Windows:
 Thumbs.db
 ehthumbs.db
