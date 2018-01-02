@@ -1,5 +1,5 @@
 /.idea
-
+/api/runtime/*
 /api/web/assets/*
 # Windows:
 Thumbs.db
