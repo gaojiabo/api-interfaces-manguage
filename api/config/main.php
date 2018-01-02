@@ -40,9 +40,9 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=10.240.0.61;dbname=hilao_api',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=hilao_api',
             'username' => 'root',
-            'password' => 'root123',
+            'password' => 'root',
             'charset' => 'utf8',
             'tablePrefix'=>'hl_',
         ],
