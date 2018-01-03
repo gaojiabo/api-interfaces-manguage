@@ -1,4 +1,5 @@
 /.idea
+/api/runtime/
 /api/runtime/*
 /api/web/assets/*
 # Windows:
