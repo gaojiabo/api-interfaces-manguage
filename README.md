@@ -19,6 +19,6 @@ api项目接口管理系统<br>
 　　'charset' => 'utf8',<br>
 　　'tablePrefix'=>'hl_',<br>
 　]<br>
-linux下，当你拉取项目并将数据库配置好之后，将api-interfaces-manguage/api/web/assets这个文件用chmod -r 777 assets 赋予权限。
+linux下，当你拉取项目并将数据库配置好之后，将api-interfaces-manguage/api/web/assets这个文件夹用chmod -r 777 assets 赋予权限,将/api-interfaces-manguage/api/runtime 这个文件夹 chmod -r 777 runtime 赋予权限，否则会报错。
 
 	
