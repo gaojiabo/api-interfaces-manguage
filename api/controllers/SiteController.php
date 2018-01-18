@@ -50,7 +50,7 @@ class SiteController extends ApiController
             ]);
         }else{
             return $this->render('empty',[
-                'message'=>'该版本下还没有任务页面和接口。['.Html::a('返回首页',['/']).']'
+                'message'=>'该版本下还没有任何页面和接口。['.Html::a('返回首页',['/']).']'
             ]);
         }
     }

@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'interface_url')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'interface_desc')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'interface_desc')->widget('kucha\ueditor\UEditor',[]) ?>
 
     <?= $form->field($model, 'method')->dropDownList(['GET'=>'GET','POST'=>'POST','PUT'=>'PUT','DELETE'=>'DELETE','OPTIONS'=>'OPTIONS']) ?>
     <div class="row">
